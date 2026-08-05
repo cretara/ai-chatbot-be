@@ -3,4 +3,4 @@ spring:
     ollama:
       base-url: http://localhost:11434
       chat:
-        model: gemma4
+        model: gemma4:latest

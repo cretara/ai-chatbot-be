@@ -1,7 +1,10 @@
 package dev.cretara.aichatbotbe.service;
 
+import dev.cretara.aichatbotbe.model.Answer;
+import dev.cretara.aichatbotbe.model.Question;
+
 public interface OllamaAIService {
 
-    String getAnswer(String question);
+    Answer getAnswer(Question question);
 
 }
