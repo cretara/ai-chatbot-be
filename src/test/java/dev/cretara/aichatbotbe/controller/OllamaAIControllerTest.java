@@ -32,10 +32,6 @@ class OllamaAIControllerTest {
     @MockitoBean
     private OllamaAIService ollamaAIService;
 
-    OllamaAIControllerTest(OllamaAIService ollamaAIService) {
-        this.ollamaAIService = ollamaAIService;
-    }
-
     @Test
     void getAnswer_returnsAnswerFromService() throws Exception {
         Question question = new Question("What is Spring Boot?");
