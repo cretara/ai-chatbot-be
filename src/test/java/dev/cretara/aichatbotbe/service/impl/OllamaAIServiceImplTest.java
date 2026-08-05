@@ -18,7 +18,7 @@ class OllamaAIServiceImplTest {
 
     @Test
     void getGenericAnswer() {
-        String question = "Who are you?";
+        String question = "Who are you? What's your name?";
         String ollamaAIServiceAnswer = ollamaAIService.getAnswer(question);
         log.info("ollamaAIServiceAnswer = {}", ollamaAIServiceAnswer);
         assertNotNull(ollamaAIServiceAnswer);
