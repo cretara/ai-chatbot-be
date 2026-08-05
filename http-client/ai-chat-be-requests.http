@@ -9,3 +9,13 @@ API-Version: 1.0
 
 <> 2026-08-05T212618.200.json
 <> 2026-08-05T212435.400.json
+
+
+###
+POST http://localhost:8080/ollama/capital
+Content-Type: application/json
+API-Version: 1.0
+
+{
+  "capitalQuestion": "Veneto"
+}

@@ -2,6 +2,8 @@ package dev.cretara.aichatbotbe.controller;
 
 import dev.cretara.aichatbotbe.model.Answer;
 import dev.cretara.aichatbotbe.model.Question;
+import dev.cretara.aichatbotbe.model.StateCapitalAnswer;
+import dev.cretara.aichatbotbe.model.StateCapitalQuestion;
 import dev.cretara.aichatbotbe.service.OllamaAIService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +23,11 @@ public class OllamaAIController {
     @PostMapping(value="/ask", version = "1.0")
     public Answer getAnswer(@RequestBody Question question) {
         return ollamaAIService.getAnswer(question);
+    }
+
+    @PostMapping(value = "capital", version="1.0")
+    public StateCapitalAnswer getStateCapital(@RequestBody StateCapitalQuestion stateCapitalQuestion) {
+        return ollamaAIService.getStateCapital(stateCapitalQuestion);
     }
 
 }
