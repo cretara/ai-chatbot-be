@@ -1,3 +1,7 @@
 spring:
+  mvc:
+    apiversion:
+      use:
+        header: API-Version
   application:
     name: ai-chatbot-be

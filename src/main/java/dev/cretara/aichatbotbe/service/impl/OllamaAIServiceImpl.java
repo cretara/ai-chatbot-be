@@ -26,7 +26,6 @@ public class OllamaAIServiceImpl implements OllamaAIService {
     public Answer getAnswer(Question question) {
         OllamaChatOptions ollamaChatOptions = OllamaChatOptions.builder()
                 .model(OllamaModel.GEMMA)
-                .temperature(0.1)
                 .build();
         Prompt prompt = new Prompt(question.question(), ollamaChatOptions);
         ChatResponse chatResponse = chatModel.call(prompt);

@@ -1,0 +1,11 @@
+###
+POST http://localhost:8080/ollama/ask
+Content-Type: application/json
+API-Version: 1.0
+
+{
+  "question": "Provide me a list of your coding skills and a list of known programming language"
+}
+
+<> 2026-08-05T212618.200.json
+<> 2026-08-05T212435.400.json
